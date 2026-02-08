@@ -1,16 +1,22 @@
-# React + Vite
+# dailyTea - чайный ресторан
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Описание
+Данное приложение - это аналог ресторанного меню, в котором присутствует возможность: **выбора** блюд и напитков, **вызова** официанта для помощи, **оформления** заказа.\
+Данный сайт был создан разработчиком и дизайнером - `Немировский Марк Александрович`\
+Ссылка на прообраз <a href="https://www.figma.com/design/LakwzvaXDYlhSa7KotoG2U/dailyTea?node-id=162-1716&t=1foBovoUKO1I5pGB-1">figma</a>
 
-Currently, two official plugins are available:
+## Бизнес-задачи
+- Предоставление меню и состава напитков и блюд
+- Добавление блюд и напитков в корзину
+- Формирование заказа
+- Вызов официанта для помощи
+- Повышение скорости работы ресторана
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Структура
+Программа поделена на логические разделы:
+- src/assets - папка для статических файлов
+  - fonts - шрифты
+  - img - изображения форматов __svg__ и __png/jpg__
+- src/components - папка для компонентов
+- styles - папка для стилевых решений
 
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
