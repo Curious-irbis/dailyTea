@@ -4,6 +4,17 @@ import news from '../assets/img/news.svg'
 import ring from '../assets/img/ring.svg'
 import loupe from '../assets/img/loupe.svg'
 
+function AlertButton({title, imgSrc, cName}){
+    return(
+        <button 
+            className={cName}
+            onClick={() => alert(title)}
+        >
+            <img src={imgSrc} alt={title} />
+            <span>{title}</span>
+        </button>
+    )
+}
 
 export default function Header(props){
     return (
@@ -13,18 +24,21 @@ export default function Header(props){
                 <span>dailyTea</span>
             </div>
             <nav className={styles.nav__div}>
-                <button className={styles.nav__component}>
-                    <img src={news} alt="новости" />
-                    <span>Новости</span>
-                </button>
-                <button className={styles.nav__component}>
-                    <img src={ring} alt="колокольчик" />
-                    <span>Вызов официанта</span>
-                </button>
-                <button className={styles.nav__component}>
-                    <img src={loupe} alt="лупа" />
-                    <span>Поиск</span>
-                </button>
+                <AlertButton 
+                    title="Новости"
+                    imgSrc={news}
+                    cName={styles.nav__component}
+                />
+                <AlertButton 
+                    title="Вызов официанта"
+                    imgSrc={ring}
+                    cName={styles.nav__component}
+                />
+                <AlertButton 
+                    title="Поиск"
+                    imgSrc={loupe}
+                    cName={styles.nav__component}
+                />
             </nav>
         </header>
     )
