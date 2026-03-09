@@ -10,7 +10,6 @@ import SearchBtn from './header.components/searchBtn'
 import LogoBtn from './header.components/logoBtn'
 
 export default function Header(props){
-
     return (
         <header className={styles.header_style}>
             <LogoBtn />

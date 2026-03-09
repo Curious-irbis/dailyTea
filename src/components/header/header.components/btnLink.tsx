@@ -1,7 +1,7 @@
 import { Link } from "react-router"
+import buttonType from "./buttonInterface"
 
-
-export default function BtnLink({linK, imgSrc, cName, title}){
+export default function BtnLink({title, cName, imgSrc, linK}: buttonType){
     return (
         <Link
             className={cName}

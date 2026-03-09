@@ -1,4 +1,6 @@
-export default function AlertButton({title, imgSrc, cName}){
+import buttonType from "./buttonInterface"
+
+export default function AlertButton({title, imgSrc, cName}: buttonType){
     return(
         <div 
             className={cName}

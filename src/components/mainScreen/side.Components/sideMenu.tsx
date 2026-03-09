@@ -6,9 +6,15 @@ import desert from '../../../assets/img/sideDeserts.svg'
 import food from '../../../assets/img/sideFood.svg'
 import tea from '../../../assets/img/sideTea.svg'
 
+interface itemType{
+    title: string,
+    cName: string,
+    innerName: string,
+    src: string
+}
 
 export default function SideMenu(props){
-    const sideItems = [
+    const sideItems: itemType[] = [
         {
             title: 'tea',
             cName: styles.side_button,
@@ -33,13 +39,13 @@ export default function SideMenu(props){
             innerName: 'Корзина',
             src: card
         }
-    ]
+    ];
 
     const menu_items = sideItems.map(item => 
         <SideButton
             title={item.title}
             cName={item.cName}
-            srcImg={item.src}
+            imgSrc={item.src}
         >
             {item.innerName}
         </SideButton>

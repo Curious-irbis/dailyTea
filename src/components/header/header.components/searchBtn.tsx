@@ -1,4 +1,6 @@
-export default function SearchBtn({cName, imgSrc, imgAlt}){
+import buttonType from "./buttonInterface"
+
+export default function SearchBtn({cName, imgSrc, imgAlt}: buttonType){
     return(
         <div
             className={cName}

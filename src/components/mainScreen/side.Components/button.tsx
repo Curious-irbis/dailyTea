@@ -1,12 +1,14 @@
 import { Link } from "react-router"
 
-export default function SideButton({children, title, cName, srcImg}){
+import buttonType from "../../header/header.components/buttonInterface"
+
+export default function SideButton({title, cName, imgSrc, children}: buttonType){
     return (
         <Link 
             to={`/${title}`}
             className={cName}
         >
-            <img src={srcImg} alt={title} />
+            <img src={imgSrc} alt={title} />
             <span>{children}</span>
         </Link>
     )
