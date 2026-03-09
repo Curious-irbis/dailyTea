@@ -4,7 +4,7 @@ import styles from './catalog.module.scss'
 import { useState } from "react"
 
 export default function Catalog(props){
-    const title = props.pName
+    const title: string = props.pName
 
     return (
         <div>

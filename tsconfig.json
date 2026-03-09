@@ -1,0 +1,28 @@
+{
+    "compilerOptions": {
+        "target": "esnext", // какая целевая версия js будет использоваться
+        "lib": [            // какие библиотеки будут доступны для окружения в TS
+            "DOM",
+            "DOM.Iterable",
+            "ESNext"
+        ],
+        "allowJs": true,    // разрешает компилятору TS обрабатывать еще и JS, JSX файлы, а не только TS, TSX
+        "skipLibCheck": true,   // включенная настройка отключает проверку типов во всех файлах .d.ts и подобных, включая node_modules
+        "esModuleInterop": true, // обеспечивает совместимость между модулями ES6 (import/export) и CommonJS (require/exports) - для совместимости
+        "allowSyntheticDefaultImports": true, // обычно устанавливется в true - 
+        // необходима для использования синтаксиса {import X from 'y'} для модулей у которых нет экспорта по умолчанию
+        "strict": false, // строгий режим в JS
+        "forceConsistentCasingInFileNames": true, // заставляет проверять регистр файла в путях импортируемых файлов
+        // реальному регистру в файловой системе
+        "module": "esnext", // определяет как именно будет импортироваться (module/require)
+        // "moduleResolution": "node", // определяет алгоритм по которому компилятор будет искать файлы модулей при обработке import, require
+        "resolveJsonModule": true, // позволяет импортировать json модули без преобразования
+        "isolatedModules": true, // принуждает tsc проверять, что можно безопасно преобразовывать в JS каждый файл без анализа других файлов
+        "noEmit": true, // не генерирует JS-файлы (при использовании Webpack/Vite)
+        "jsx": "react-jsx"
+    },
+    // это папка с исходниками
+    "include": [
+        "src"
+    ]
+}
