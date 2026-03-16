@@ -29,9 +29,11 @@
 
             align-items: center;
 
-            gap: 40px;
+            gap: 30px;
 
             background-color: #C39077;
+            border: 3px solid #FEF2E1;
+            border-radius: 10px;
 
             padding: 10px;
 
@@ -58,20 +60,20 @@
                     text-align: center;
                     background-color: #FEF2E1;
                     width: 100%;
+                    border-radius: 5px;
                 }
 
                 p{
                     background-color: #FEF2E1;
                     padding: 25px;
 
+                    border-radius: 10px;
+
                     width: 100%;
                     max-width: 310px;
 
                     height: 120px;
                     overflow-y: scroll;
-                    // white-space: nowrap;
-                    // overflow: hidden;
-                    // text-overflow: ellipsis;
                     text-align: justify;
                     text-align-last: justify;
                 }
