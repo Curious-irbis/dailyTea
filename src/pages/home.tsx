@@ -7,6 +7,7 @@ import yellow_tea from '../assets/img/tea/yellow.jpeg'
 import white_tea from '../assets/img/tea/white.jpeg'
 import oolong from '../assets/img/tea/oolong.jpeg'
 import pouer from '../assets/img/tea/pouer.jpeg'
+import { useState } from "react"
 
 
 interface teaInterface{
@@ -83,15 +84,20 @@ const teaList: teaInterface[] = [
 
 
 export default function Home(){
+    const [searchQuery, setSearchQuery] = useState('')
 
     return (
         <div>
-            <Header />
+            <Header 
+                // list={teaList}
+                searchQuery={searchQuery}
+                setSearchQuery={setSearchQuery}
+            />
             <MainScreen 
                 text="Чай" 
-            > 
-            {teaList}
-            </MainScreen>
+                searchQuery={searchQuery}
+                list={teaList}
+            />
         </div>
     )
 }

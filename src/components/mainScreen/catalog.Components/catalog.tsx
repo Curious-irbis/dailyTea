@@ -11,15 +11,22 @@ interface itemInterface{
 }
 
 
-export default function Catalog({pName, children}){
+export default function Catalog({pName, searchQuery, listToRender}){
     const title = useState(pName)
+    let filteredList = [];
     let tea_list_li = 
     <div>
         <h3>Здесь, пока, ничего нет</h3>
     </div>;
+    
 
-    if(children){
-        tea_list_li = children.map((item: itemInterface) => {
+
+    if(listToRender){
+        filteredList = listToRender.filter(product => 
+            product.title.toLowerCase().includes(searchQuery.toLowerCase())
+        )
+
+        tea_list_li = filteredList.map((item: itemInterface) => {
             return(
                 <div className={styles.container}>
                     <div className={styles.imgTitle}>
@@ -33,18 +40,22 @@ export default function Catalog({pName, children}){
                 </div>
             )
         })
-
-        // document.getElementsByClassName('container').forEach()
-    }
-
-
-
-    return (
-        <div className={styles.main_container}>
-            <h2>{title}</h2>
-            <div className={styles.list_container}>
-                {tea_list_li}
+        return (
+            <div className={styles.main_container}>
+                <h2>{title}</h2>
+                <div className={styles.list_container}>
+                    {filteredList.length > 0 ? (tea_list_li) : (<h3>Товары не найдены</h3>)} 
+                </div>
             </div>
-        </div>
-    )
+        )
+    }else {
+        return (
+            <div className={styles.main_container}>
+                <h2>{title}</h2>
+                <div className={styles.list_container}>
+                    {tea_list_li}
+                </div>
+            </div>
+        )
+    }
 }

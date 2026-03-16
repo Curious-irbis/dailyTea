@@ -6,7 +6,7 @@ import { useState } from "react";
 import Catalog from "./catalog.Components/catalog";
 import SideMenu from "./side.Components/sideMenu";
 
-export default function MainScreen({text, children}){
+export default function MainScreen({text, searchQuery, list}){
     const title = useState(text)
 
     return (
@@ -14,9 +14,9 @@ export default function MainScreen({text, children}){
             <SideMenu />
             <Catalog 
                 pName={title}
-            >
-                {children}
-            </Catalog>
+                searchQuery={searchQuery}
+                listToRender={list}
+            />
         </div>
     )
 }

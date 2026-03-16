@@ -8,8 +8,12 @@ import BtnLink from './header.components/btnLink'
 import AlertButton from './header.components/alertButton'
 import SearchBtn from './header.components/searchBtn'
 import LogoBtn from './header.components/logoBtn'
+import { useState } from 'react'
 
-export default function Header(props){
+export default function Header({searchQuery, setSearchQuery}){
+    // const [productsList, setProductsList] = useState(props.list)
+    // const [searchQuery] = useState(props.searchQuery)
+
     return (
         <header className={styles.header_style}>
             <LogoBtn />
@@ -29,6 +33,9 @@ export default function Header(props){
                     imgAlt="Поиск"
                     imgSrc={loupe}
                     cName={styles.nav__component}
+                    // searchList={productsList}
+                    searchQuery={searchQuery}
+                    setSearchQuery={setSearchQuery}
                 />
             </nav>
         </header>
