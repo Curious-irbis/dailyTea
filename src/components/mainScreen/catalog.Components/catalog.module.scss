@@ -21,6 +21,7 @@
         gap: 20px;
         align-items: center;
         padding: 40px;
+        justify-content: space-between;
 
 
         .container{
@@ -36,17 +37,24 @@
             border-radius: 10px;
 
             padding: 10px;
+            max-width: 620px;
+            width: 100%;
 
             .imgTitle{
                 display: flex;
                 flex-flow: column nowrap;
                 color: #FEF2E1;
+                align-items: center;
 
                 img{
                     width: 120px;
                     height: 120px;
                     border: 3px solid white;
                     border-radius: 10px;
+                }
+
+                span{
+                    max-width: 130px;
                 }
             }
 
@@ -77,6 +85,17 @@
                     text-align: justify;
                     text-align-last: justify;
                 }
+            }
+
+            .cardAdd{
+                background-color: #FEF2E1;
+                color: #622B0D;
+                border: none;
+                padding: 10px 40px;
+                font-size: 32px;
+                border-radius: 15px;
+            }:hover{
+                cursor: pointer;
             }
         }
     }

@@ -1,8 +1,8 @@
 import styles from './header.module.scss'
 
-import news from '../../assets/img/news.svg'
-import ring from '../../assets/img/ring.svg'
-import loupe from '../../assets/img/loupe.svg'
+import news from '../../assets/img/services/news.svg'
+import ring from '../../assets/img/services/ring.svg'
+import loupe from '../../assets/img/services/loupe.svg'
 
 import BtnLink from './header.components/btnLink'
 import AlertButton from './header.components/alertButton'

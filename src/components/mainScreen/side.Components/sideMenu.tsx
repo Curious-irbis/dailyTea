@@ -1,10 +1,10 @@
 import styles from './sideMenu.module.scss'
 import SideButton from './button'
 
-import card from '../../../assets/img/sideCard.svg'
-import desert from '../../../assets/img/sideDeserts.svg'
-import food from '../../../assets/img/sideFood.svg'
-import tea from '../../../assets/img/sideTea.svg'
+import card from '../../../assets/img/services/sideCard.svg'
+import desert from '../../../assets/img/services/sideDeserts.svg'
+import food from '../../../assets/img/services/sideFood.svg'
+import tea from '../../../assets/img/services/sideTea.svg'
 
 interface itemType{
     title: string,

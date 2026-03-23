@@ -1,7 +1,7 @@
 import styles from '../header.module.scss'
 import { Link } from "react-router";
 
-import teaCup from '../../../assets/img/tea-cup.svg'
+import teaCup from '../../../assets/img/services/tea-cup.svg'
 
 
 export default function LogoBtn(props){
