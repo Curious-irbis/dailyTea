@@ -2,20 +2,20 @@ import { useState } from "react";
 import Header from "../components/header/header";
 import MainScreen from "../components/mainScreen/mainScreen";
 
-import fishKish from '../assets/img/food/киш с лососем.jpg'
-import mushroomKish from '../assets/img/food/киш с грибами.jpg'
-import shpinatKish from '../assets/img/food/киш с шпинатом.jpg'
+import fishKish from '../assets/img/food/salmonKish.jpg'
+import mushroomKish from '../assets/img/food/mushroomKish.jpg'
+import shpinatKish from '../assets/img/food/shpinatKish.jpg'
 
-import ovoshnoySup from '../assets/img/супы/овощной суп.jpg'
-import tomatnySup from '../assets/img/супы/томатный крем суп.png'
-import tykvennySup from '../assets/img/супы/тыквенный крем суп.jpeg'
+import ovoshnoySup from '../assets/img/soups/vegetableSoups.jpg'
+import tomatnySup from '../assets/img/soups/tomatoSoup.png'
+import tykvennySup from '../assets/img/soups/pumpkinSoup.jpeg'
 
-import vegetableSalad from '../assets/img/салаты/салат овощной.jpg'
-import tunaSalad from '../assets/img/салаты/салат с тунцом.jpg'
-import cheesePlate from '../assets/img/салаты/сырная тарелка.jpg'
+import vegetableSalad from '../assets/img/salads/vegetableSalad.jpg'
+import tunaSalad from '../assets/img/salads/tunaSalad.jpg'
+import cheesePlate from '../assets/img/salads/cheeseTable.jpg'
 
-import chickenRosmarine from '../assets/img/горячее/запеченая грудка с розмарином.jpeg'
-import salmonSteak from '../assets/img/горячее/стейк из лосося с овощами на пару.jpeg'
+import chickenRosmarine from '../assets/img/hot/chickenRosmarine.jpeg'
+import salmonSteak from '../assets/img/hot/salmonWithVegetables.jpeg'
 
 interface foodInterface{
     title: string,
