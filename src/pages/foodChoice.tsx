@@ -17,6 +17,8 @@ import cheesePlate from '../assets/img/salads/cheeseTable.jpg'
 import chickenRosmarine from '../assets/img/hot/chickenRosmarine.jpeg'
 import salmonSteak from '../assets/img/hot/salmonWithVegetables.jpeg'
 
+
+
 interface foodInterface{
     title: string,
     img: string,
